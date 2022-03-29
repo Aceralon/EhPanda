@@ -145,6 +145,7 @@ extension KFImage {
                 radius: withRoundedCorners ? 5 : nil
             ))
             .fade(duration: 0.25)
+            .blur(radius: 30)
             .resizable()
     }
 }

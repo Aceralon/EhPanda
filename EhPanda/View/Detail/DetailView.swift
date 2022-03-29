@@ -725,7 +725,8 @@ private struct PreviewsSection: View {
                         } label: {
                             KFImage.url(url, cacheKey: previewURL.absoluteString)
                                 .placeholder { Placeholder(style: .activity(ratio: Defaults.ImageSize.previewAspect)) }
-                                .imageModifier(modifier).fade(duration: 0.25).resizable().scaledToFit()
+                                .imageModifier(modifier).fade(duration: 0.25)
+                                .blur(radius: 30).resizable().scaledToFit()
                                 .frame(width: width, height: height)
                         }
                     }

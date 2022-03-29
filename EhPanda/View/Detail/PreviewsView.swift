@@ -51,7 +51,8 @@ struct PreviewsView: View {
                         } label: {
                             KFImage.url(url, cacheKey: viewStore.previewURLs[index]?.absoluteString)
                                 .placeholder { Placeholder(style: .activity(ratio: Defaults.ImageSize.previewAspect)) }
-                                .imageModifier(modifier).fade(duration: 0.25).resizable().scaledToFit()
+                                .imageModifier(modifier).fade(duration: 0.25)
+                                .blur(radius: 30).resizable().scaledToFit()
                         }
                         Text("\(index)").font(DeviceUtil.isPadWidth ? .callout : .caption).foregroundColor(.secondary)
                     }
