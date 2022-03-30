@@ -100,8 +100,12 @@ class GeneralSettingStoreTests: XCTestCase {
             )
         )
         store.send(.clearWebImageCache)
-        XCTWaiter.wait(timeout: 1)
+        XCTWaiter.wait(timeout: 5)
         store.receive(.calculateWebImageDiskCache)
-        store.receive(.calculateWebImageDiskCacheDone(0))
+        store.receive(.calculateWebImageDiskCacheDone(0)) {
+            let formatter = ByteCountFormatter()
+            formatter.allowedUnits = .useAll
+            $0.diskImageCacheSize = formatter.string(fromByteCount: 0)
+        }
     }
 }
