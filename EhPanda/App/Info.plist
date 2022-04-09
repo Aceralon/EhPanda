@@ -33,6 +33,13 @@
 					<string>AppIcon_Developer</string>
 				</array>
 			</dict>
+			<key>AppIcon_StandWithUkraine2022</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>AppIcon_StandWithUkraine2022</string>
+				</array>
+			</dict>
 		</dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>
@@ -70,6 +77,14 @@
 					<string>AppIcon_Developer_iPad_Pro</string>
 				</array>
 			</dict>
+			<key>AppIcon_StandWithUkraine2022</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>AppIcon_StandWithUkraine2022_iPad</string>
+					<string>AppIcon_StandWithUkraine2022_iPad_Pro</string>
+				</array>
+			</dict>
 		</dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>
@@ -88,7 +103,7 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.3.1</string>
+	<string>2.4.0</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -103,7 +118,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>135</string>
+	<string>136</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
